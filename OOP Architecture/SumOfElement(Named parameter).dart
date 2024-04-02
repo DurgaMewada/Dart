@@ -4,7 +4,7 @@ import 'dart:io';
 
 class Sum {
   int sum = 0;
-  int listSum(List<int> elements) {
+  int listSum({required List<int> elements}) {
     for (int i = 0; i < elements.length; i++) {
       sum += elements[i];
     }
@@ -14,6 +14,6 @@ class Sum {
 
 void main() {
   Sum s1 = Sum();
-  List<int> elements = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
-  print("\nSum of list is : ${s1.listSum(elements)}\n");
+  List<int> ListofElement = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+  print("\nSum of list is : ${s1.listSum(elements: ListofElement)}\n");
 }
